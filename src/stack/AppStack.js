@@ -1,15 +1,14 @@
-import React, {useContext, useState, useEffect} from 'react';
+import React from 'react';
 import {createStackNavigator} from '@react-navigation/stack';
-import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
-import {Text, View} from 'react-native';
+
 import TiendasScreen from '../screen/Tiendas';
-import CampScreen from "../screen/Camp";
+import CampScreen from '../screen/Camp';
 
 const Stack = createStackNavigator();
 
 const screenOptionStyle = {
   headerStyle: {
-    backgroundColor: '#F9362C',
+    backgroundColor: 'rgba(249,54,44,0.72)',
   },
   headerTintColor: 'white',
   headerBackTitle: 'Back',
@@ -22,7 +21,7 @@ const screenOptionStyle = {
 const AppStack = () => {
   return (
     <Stack.Navigator screenOptions={screenOptionStyle}>
-      <Stack.Screen name="Tiendas" component={TiendasScreen} />
+      <Stack.Screen name="Detalle de Tiendas" component={TiendasScreen} />
       <Stack.Screen name="Camp" component={CampScreen} />
     </Stack.Navigator>
   );

@@ -4,7 +4,7 @@ import * as SecureStore from 'expo-secure-store';
 import {ActivityIndicator, View} from 'react-native';
 import {NavigationContainer} from '@react-navigation/native';
 import AuthStack from '../stack/AuthStack';
-import TabNavigation from "../stack/TabNavigation";
+import TabNavigation from '../stack/TabNavigation';
 
 const Router = () => {
   const {user, setUser} = useContext(AuthContext);
